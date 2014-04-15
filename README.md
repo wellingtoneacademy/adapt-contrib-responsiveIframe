@@ -1,4 +1,4 @@
 adapt-contrib-responsive-iframe
 ===============================
 
-Allows embedding content inside a responsive &lt;iframe> tag
+Allows embedded content inside a responsive <iframe> tag
