@@ -5,7 +5,7 @@
   "authors": [
     "Kevin Corry <kevinc@learningpool.com>"
   ],
-  "description": "A responsive iframe component - include what you like!",
+  "description": "Allows embedded content inside an iframe tag that will respond to theme breakpoints.",
   "main": "/js/adapt-contrib-responsiveIframe.js",
   "keywords": [
     "adapt-plugin",
