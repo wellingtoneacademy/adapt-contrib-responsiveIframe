@@ -20,7 +20,7 @@ define(function(require) {
 
         postRender: function() {
             var that = this;
-            this.$('iframe').ready(function(){
+            this.$('.responsiveIframe-iframe').ready(function() {
                 that.resizeControl(Adapt.device.screenSize);
                 that.setReadyStatus();
             });
