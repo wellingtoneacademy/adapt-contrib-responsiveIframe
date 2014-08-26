@@ -11,5 +11,6 @@
     "adapt-plugin",
     "adapt-component"
   ],
+  "component": "responsiveIframe",
   "license": "GPLv3"
 }
