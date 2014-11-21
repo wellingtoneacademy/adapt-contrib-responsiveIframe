@@ -1,6 +1,6 @@
 {
   "name": "adapt-contrib-responsiveIframe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allows embedded content inside an iframe tag that will respond to theme breakpoints.",
   "main": "",
   "scripts": {
