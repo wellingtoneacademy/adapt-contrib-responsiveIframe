@@ -5,8 +5,10 @@
     "_component":"responsiveIframe",
     "_classes":"",
     "_layout":"full",
-    "title":"",
+    "title": "",
+    "displayTitle": "",
     "body": "",
+    "instruction": "",
     "_source": "course/en/embed/test.html",
     "_scrolling": "no",
     "_width": {
