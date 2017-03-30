@@ -11,11 +11,22 @@ define(function(require) {
     var ResponsiveIframe = ComponentView.extend({
 
         events: {
-            'inview':'inview'
+            'inview': 'inview'
         },
 
         preRender: function() {
             this.listenTo(Adapt, 'device:changed', this.resizeControl);
+
+            this.checkIfResetOnRevisit();
+        },
+
+        checkIfResetOnRevisit: function() {
+            var isResetOnRevisit = this.model.get('_isResetOnRevisit');
+
+            // If reset is enabled set defaults
+            if (isResetOnRevisit) {
+                this.model.reset(isResetOnRevisit);
+            }
         },
 
         postRender: function() {
