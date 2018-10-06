@@ -7,8 +7,6 @@ define(function(require) {
 
     var ComponentView = require("coreViews/componentView");
     var Adapt = require("coreJS/adapt");
-    var origin = this.model.get('_origin');
-    var completion = this.model.get('_completion');
     var ResponsiveIframe = ComponentView.extend({
     
         events: {
@@ -39,15 +37,20 @@ define(function(require) {
         },
 
         inview: function(event, visible) {
-            if (visible && completion == "no") {
+            if (visible && this.model.get('_completion') == "no") {
                 this.setCompletionStatus();
-            },
-            window.addEventListener("message", this.gameComplete.bind(this), false);
-            console.log(completion);
+            }
+            
+            else if (visible && this.model.get('_completion') == "yes") {
+                window.addEventListener("message", this.receiveMessage.bind(this), false);
+                }
+
         },
+        
+
 
         receiveMessage: function receiveMessage(event) {
-            if (event.origin !== origin)
+            if (event.origin !== this.model.get('_origin'))
                 return;
                 this.setCompletionStatus();
             },
