@@ -38,6 +38,25 @@
       "validators": ["required"],
       "help": "The scrolling attribute specifies whether or not to display scrollbars in an <iframe>"
     },
+    "_completion": {
+      "type": "string",
+      "required": true,
+      "title": "Completion received",
+      "default": "no",
+      "enum": ["yes", "no"],
+      "inputType": {"type": "Select", "options": ["yes", "no"]},
+      "validators": ["required"],
+      "help": "Select yes if your iFrame is sending window.postmessage to complete the component"
+    },
+    "_origin": {
+      "type": "string",
+      "required": true,
+      "title": "Domain name",
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "Domain name that will send window.postmessage to complete the component (http://example.org)"
+    },
     "_width": {
       "type": "object",
       "required": true,
