@@ -55,7 +55,10 @@ define(function(require) {
                 this.setCompletionStatus();
             },
         
-
+        localJS: function completeCourse() {
+            this.setCompletionStatus();
+            console.log("iFrame completed!");
+        },
 
         resizeControl: function(size) {
             var width = this.$('.responsiveIframe-iframe').attr('data-width-' + size);
