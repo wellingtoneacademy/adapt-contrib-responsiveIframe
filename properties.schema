@@ -60,7 +60,7 @@
     "_description": {
       "type": "string",
       "required": true,
-      "title": "Video description",
+      "title": "Content description",
       "default": "",
       "inputType": "TextArea",
       "validators": [],
