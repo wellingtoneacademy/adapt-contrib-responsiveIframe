@@ -61,10 +61,7 @@ define(function(require) {
         },
 
         resizeControl: function(size) {
-            var width = this.$('.responsiveIframe-iframe').attr('data-width-' + size);
-            var height = this.$('.responsiveIframe-iframe').attr('data-height-' + size);
-            this.$('.responsiveIframe-iframe').width(width);
-            this.$('.responsiveIframe-iframe').height(height);
+            console.log("Resize event triggered!");
         }
 
     });

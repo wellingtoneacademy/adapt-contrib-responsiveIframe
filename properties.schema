@@ -57,67 +57,15 @@
       "validators": [],
       "help": "Domain name that will send window.postmessage to complete the component (http://example.org)"
     },
-    "_width": {
-      "type": "object",
+    "_description": {
+      "type": "string",
       "required": true,
-      "title": "Width of the <iframe> in specified breakpoints",
-      "properties": {
-        "_small": {
-          "type": "number",
-          "required": true,
-          "title": "Small width",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Width with a small viewport"
-        },
-        "_medium": {
-          "type": "number",
-          "required": true,
-          "title": "Medium width",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Width with a medium viewport"
-        },
-        "_large": {
-          "type": "number",
-          "required": true,
-          "title": "Large width",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Width with a large viewport"
-        }
-      }
-    },
-    "_height": {
-      "type": "object",
-      "required": true,
-      "title": "Height of the <iframe> in specified breakpoints",
-      "properties": {
-        "_small": {
-          "type": "number",
-          "required": true,
-          "title": "Small height",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Height with a small viewport"
-        },
-        "_medium": {
-          "type": "number",
-          "required": true,
-          "title": "Medium height",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Height with a medium viewport"
-        },
-        "_large": {
-          "type": "number",
-          "required": true,
-          "title": "Large height",
-          "inputType": "Number",
-          "validators": ["number", "required"],
-          "help": "Height with a large viewport"
-        }
-      }
+      "title": "Video description",
+      "default": "",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "Short description to go under the content",
+      "translatable": true
     }
   }
 }

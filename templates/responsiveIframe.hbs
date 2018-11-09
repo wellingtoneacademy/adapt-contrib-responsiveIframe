@@ -4,9 +4,11 @@
   <div class="component-widget responsiveIframe-widget">
     <div class="responsiveIframe-iframe-holder">
       <iframe scrolling="{{#if _scrolling}}{{_scrolling}}{{else}}no{{/if}}" class="responsiveIframe-iframe" src="{{_source}}"
-        data-height-large="{{_height._large}}" data-height-medium="{{_height._medium}}" data-height-small="{{_height._small}}"
-        data-width-large="{{_width._large}}" data-width-medium="{{_width._medium}}" data-width-small="{{_width._small}}" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+        allowfullscreen webkitallowfullscreen mozallowfullscreen>
       </iframe>
     </div>
+        <div class="responsiveIframe-description">
+        {{{a11y_text _description}}}
+        </div>
   </div>
 </div>
