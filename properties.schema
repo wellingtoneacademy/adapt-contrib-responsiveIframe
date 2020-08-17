@@ -26,7 +26,7 @@
       "default": "",
       "inputType": "Text",
       "validators": ["required"],
-      "help": "The URL which will be rendered inside the <iframe>"
+      "help": "The URL which will be rendered inside the iframe"
     },
     "_scrolling": {
       "type": "string",
@@ -36,7 +36,7 @@
       "enum": ["auto", "yes", "no"],
       "inputType": {"type": "Select", "options": ["auto", "yes", "no"]},
       "validators": ["required"],
-      "help": "The scrolling attribute specifies whether or not to display scrollbars in an <iframe>"
+      "help": "The scrolling attribute specifies whether or not to display scrollbars in an iframe"
     },
     "_completion": {
       "type": "string",

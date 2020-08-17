@@ -1,7 +1,7 @@
 adapt-contrib-responsiveIframe
 ===============================
 
-Allows embedded content inside an ``<iframe>`` tag that will respond to theme breakpoints.
+Allows embedded content inside an ``iframe`` tag that will respond to theme breakpoints.
 
 
 Usage
